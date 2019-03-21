@@ -1,0 +1,257 @@
+
+<html>
+<meta charset="UTF-8">
+<title>Helpdesk</title>
+
+
+<body>
+
+<h2 id="klantnaam"></h2>
+
+<script type="text/javascript">
+
+	
+	           
+              var klantnaam = prompt("Wat is uw naam?");
+              while (klantnaam ==="")
+              klantnaam=prompt("Sorry wat is uw naam?");
+           document.write("<h1>Klant naam is: " + klantnaam + "<br></h1>");
+               
+               
+
+               var Datum = prompt("Wat is datum?")
+               while (Datum =="")
+               	Datum=prompt("sorry wat is de datum")
+               document.write("Klant belt op: " +  Datum + "<br>");
+
+
+               var Modem = prompt("wat is het merk en type van uw modem?")
+               document.write("<br /> Modem van klant: " + Modem);
+
+               document.write("<fieldset><legend>Internet</legend>");
+
+               
+               
+               var product = confirm("heeft u een klacht over ons product internet")
+               if(product ==true){{
+               document.write("<br />Klant meld probleem met internet: " + product);
+
+
+               	}
+
+               var Browsen = confirm("Kunt u browsen naar www.nu.nl?")
+               if(Browsen){
+               	alert("Internet laad wel")
+               	document.write("<br><br>browsen naar www.nu.nl lukt!")
+       				}
+       			else
+
+       			{
+
+       			alert("Internet laad niet")
+       			document.write("<br> <br>browsen naar www.nu.nl lukt niet!")
+
+       			}
+
+       	       		
+                
+                var  F5 = confirm("Reageert de pagina snel na het indrukken van F5?")
+                if (F5 == true){
+                   alert("Reageert snel")
+                   document.write("<br> de pagina laad  snel ")
+                   
+                   document.write("<br> <br> U kunt browsen en uw pagina's laden snel.U heeft geen internet probleem.")
+                   document.write(" <br><br><li>browsen naar www.nu.nl lukt</li>")
+                   document.write("<li>de pagina reageert snel</li>")
+                }
+                 else
+
+                
+                {
+
+                alert("Reageert niet")
+                document.write("<br> <br> Probleem: de pagina laad niet snel")
+                document.write("<br> <br> U meld problemen ")
+                 document.write("<br>")
+
+                document.write(' <a href="internet-laden.html">internet-laden</a>')
+                
+                document.write("<br>")
+
+                document.write('<a href="snelheid-laden.html">snelheid-laden</a>')
+                
+
+                }}
+
+               
+
+               document.write("</fieldset>") 
+
+               
+
+                 
+            document.write("<fieldset><legend>Internet en Bellen</legend>")
+               var InternetBellen  = confirm (" Heeft u een klacht over ons product  Internet en  Bellen")
+                if 	(InternetBellen== true){{
+                	document.write("Klant meldt een probleem met Internet en Bellen")
+                }
+
+                
+                
+                
+
+                var kiestoon = confirm("Hoort u een kiestoon?")
+                if (kiestoon==true){
+                	document.write(" <br>Hoort een kiestoon")
+
+                 }
+
+                 else
+                 	 document.write("<br> <br> Probleem: de pagina laad niet snel")
+                      
+
+
+
+
+
+               
+                var Bellen = confirm("Kunt u zelf bellen op bijvoorbeeld een mobiel nummer?")
+                if (Bellen==true){
+                	document.write(" <br>Kan van vast naar mobiel bellen")
+
+                 }
+                 else 
+                 	document.write("<br> Probleem: klant Kan niet van vast naar mobiel bellen ")
+                    document.write("<br> U meld problemen ")
+
+              
+
+                var nummerbellen = confirm("Kunt u met uw mobiel het nummer bellen waar u een klacht over heeft?")
+                if (nummerbellen==true){
+                	document.write(" <br>Kan van mobiel naar vast bellen")
+                	document.write(" U heeft een kiestoon. U heeft geen Internet en Bellen probleem.")
+                	document.write("Klant meldt geen probleem met Internet en Bellen")
+
+                document.write("<li>Hoort een  kiestoon</li>")
+                document.write("<li>Kan van vast naar mobiel bellen</li>")
+                document.write("<li>Kan van mobiel naar vast bellen</li>")
+
+                }}else {
+                	
+                }
+
+               document.write("</fieldset>")
+
+               
+    document.write("<fieldset><legend>Internet,Bellen,Televisie</legend>")
+
+
+               
+
+                
+                var klacht = confirm("Heeft u een klacht over ons product Internet,Bellen en Televisie?")
+                if (klacht==true){{
+                	document.write(" <br>Klant meldt probleem met Internet,Bellen en Televisie")
+
+                 }
+                  
+                 
+                 	
+
+
+             var tv = prompt("aantal televisie toestellen?")
+             while (tv ==="")
+              tv=prompt("Sorry voer een geldig getal in?");
+             document.write("<br><br>klant heeft " + tv +" televisietoestellen")
+
+
+            
+                	
+
+                   
+                 var splitter = confirm("Is uw splitter goed aangesloten?")
+                if (splitter==true){
+                document.write(" <br><br> Splitter is goed aangesloten.")
+                
+
+                 }
+                 else 
+                 document.write("<br>Splitter is niet goed aangesloten")
+                 
+
+
+                var settopbox = confirm("Is uw settopbox goed aangesloten")
+                if (settopbox==true){
+                document.write("<br>Settopbox is goed aangesloten")
+
+                 }
+                 else 
+            document.write(" <br>Probleem: settopbox niet goed aangesloten")
+
+
+
+                var zenders = confirm("Worden de zenders gevonden?")
+                if (zenders==true){
+                	document.write(" <br><br>Zenders worden gevonden")
+               document.write("<br><br> U heeft uw splitter en settopbox goed aangesloten en de zenders worden gevonden.U heeft geen Internet,Bellen en Televisie probleem")
+               
+               }
+               else
+               	document.write("<br>Probleem Zenders worden niet gevonden")
+               
+
+               
+                
+                 var list = confirm("")
+                if (list==true){
+               document.write("<br><li> Klant heeft " + tv + " televisietoestellen");
+               document.write("<li> Klant Splitter is goed aangesloten")
+               document.write("<li> Klant settopbox is goed aangesloten")
+               document.write("<li> Klant zenders worden gevonden")
+               document.write("<br>Klant meldt geen probleem met Internet en Bellen, Televisie")   
+
+
+               }
+               else
+               document.write("<br><li> Klant heeft " + tv + " televisietoestellen");
+               document.write("<li> Klant Splitter is niet goed aangesloten")
+               document.write("<li> Klant settopbox is niet goed aangesloten")
+               document.write("<li> Klant zenders worden niet gevonden")
+
+               document.write("<br> U meld problemen")
+
+               document.write(' <br><a href="splitter-aangesloten.html">Splitter-aangesloten</a>')
+
+              document.write('<br><a href="settopbox-aangesloten.html">Settopbox-aangesloten</a>')
+
+               document.write(' <br><a href="zenders-niet-gevonden.html">Zenders-niet-gevonden</a>')
+                
+              
+               }
+              
+
+            document.write("</fieldset>")
+
+            var klacht = confirm(" heeft u problemen met de Modem?")
+            if(klacht ==true){
+            document.write("<br> U heeft een klacht gemeld  op " + Datum);
+           document.write(" <br>Uw modem " + Modem + " werkt  niet goed");
+            
+            }
+            else{
+             document.write("<br> U heeft geen klacht gemeld  op " + Datum);
+            document.write(" <br>Uw modem " + Modem + " werkt goed");
+            }
+           
+                
+
+  			
+</script>
+</body>
+
+
+
+</html>
+
+
+              
